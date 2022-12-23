@@ -128,3 +128,25 @@ html, body{
   margin: 0;
   padding: 0;
 }
+
+.price-container-1 {
+  width: 80px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.price-container-2 {
+  display: flex;
+}
+
+.price-container-1 p:nth-child(1) {
+  font-size: 30px;
+}
+
+.price-container-2 p:nth-child(1) {
+  font-size: 70px;
+}
+
+.price-container-2 p:nth-child(2) {
+  align-self: flex-end;
+}
