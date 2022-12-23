@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+KR:wght@100;300&family=Quicksand:wght@300&family=Righteous&family=Roboto:wght@900&family=Urbanist:wght@100;900&family=Work+Sans:wght@100&display=swap');
+
+html, body{
+    background-color: #d3d3d3;
+  }
+  .wrapper{
+    width:100%;
+    padding-top: 20px;
+  }
+
+  .carousel{
+    width:90%;
+    margin:0px auto;
+    background-color: #d3d3d3;
+  }
+  .slick-slide{
+    margin:10px;
+    background-color: #d3d3d3;
+  }
+  .slick-slide img{
+    width:100%;
+    border: 2px solid #d3d3d3;
+  }
+  .wrapper .slick-dots li button:before {
+    font-size:20px;
+    color:white;
+  }
+
+  .slick-prev::before {
+    content: url('./arrow-l.svg')
+  }
+
+  .slick-next::before {
+    content: url('./arrow-r.svg')
+  }
+
+  .product {
+    width: 50%;
+  }
+
+  .articles-container {
+    height: 300px;
+    margin-top: 50px;
+    background-color: #ffffff;
+  }
+
+  .form-container {
+    height: 300px;
+    background-color: aquamarine;
+  }
+
+  .slide-content {
+    background-color: #ffffff;
+    height: 500px;
+}
+
+.img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.item-text {
+    position: absolute;
+    bottom: 10%;
+    color: #a1a2a1;
+}
+
+.item-text p:nth-child(1) {
+    padding: 0;
+    margin: 0;
+    font-family: 'Dosis', sans-serif;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+.item-text p:nth-child(2) {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 100px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 60px;
+}
+
+.item-text button {
+    width: 140px;
+    height: 40px;
+    background-color: #00a8e8;
+    border-radius: 5px;
+    border-style: none;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+}
+
+.item-container {
+    display: flex !important;
+}
