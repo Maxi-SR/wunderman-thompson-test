@@ -9,14 +9,11 @@
     margin:0px auto;
     background-color: #d3d3d3;
   }
-  .slick-slide{
-    margin:10px;
-    background-color: #d3d3d3;
-  }
+
   .slick-slide img{
     width:100%;
     position: relative;
-    left: 45px;
+    left: 30px;
   }
   .wrapper .slick-dots li button:before {
     font-size:20px;
@@ -24,11 +21,15 @@
   }
 
   .slick-prev::before {
-    content: url('../arrow-l.svg')
+    content: url('../izq.png')
+  }
+
+  .slick-next {
+    right: 0px;
   }
 
   .slick-next::before {
-    content: url('../arrow-r.svg')
+    content: url('../der.png')
   }
 
   .product {
@@ -60,40 +61,39 @@
 
 .item-text {
     position: absolute;
-    bottom: 10%;
     color: #a1a2a1;
     z-index: 1;
+    font-size: 10vw !important;
 }
 
 .item-text p:nth-child(1) {
     display: flex;
-    align-self: flex-end;
+    align-self: flex-start;
     padding: 0;
     margin: 0;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
-    font-size: 25px;
+    font-size: 5vw;
     position: relative;
-    top: 10px;
+    top: 20px;
 }
 
 .item-text p:nth-child(2) {
     display: flex;
     position: relative;
-    align-self: flex-end;
+    align-self: flex-start;
     padding: 0;
     margin: 0;
     margin-bottom: 100px;
     font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 60px;
-    bottom: 10px;
+    font-size: 18vw;
 }
 
 .item-text button {
-    width: 140px;
-    height: 40px;
+    width: 170px;
+    height: 45px;
     background-color: #00a8e8;
     border-radius: 5px;
     border-style: none;
@@ -174,10 +174,15 @@
   width: 2000px;
 }
 
-.slick-initialized .slick-slide {
+/* .slick-initialized .slick-slide {
   display: block;
   margin: 0;
   padding: 0;
+} */
+
+.slick-prev {
+  left: -35px !important;
+  z-index: 1;
 }
 
 .price-int {
