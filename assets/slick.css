@@ -16,7 +16,7 @@
   .slick-slide img{
     width:100%;
     position: relative;
-    left: 35px;
+    left: 45px;
   }
   .wrapper .slick-dots li button:before {
     font-size:20px;
@@ -62,17 +62,25 @@
     position: absolute;
     bottom: 10%;
     color: #a1a2a1;
+    z-index: 1;
 }
 
 .item-text p:nth-child(1) {
+    display: flex;
+    align-self: flex-end;
     padding: 0;
     margin: 0;
     font-family: 'Dosis', sans-serif;
     text-transform: uppercase;
     font-size: 25px;
+    position: relative;
+    top: 10px;
 }
 
 .item-text p:nth-child(2) {
+    display: flex;
+    position: relative;
+    align-self: flex-end;
     padding: 0;
     margin: 0;
     margin-bottom: 100px;
@@ -80,6 +88,7 @@
     text-transform: uppercase;
     font-weight: 900;
     font-size: 60px;
+    bottom: 10px;
 }
 
 .item-text button {
