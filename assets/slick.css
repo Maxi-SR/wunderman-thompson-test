@@ -1,10 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200&family=Noto+Sans+KR:wght@100;300&family=Quicksand:wght@300&family=Righteous&family=Roboto:wght@900&family=Urbanist:wght@100;900&family=Work+Sans:wght@100&display=swap');
 
-html, body{
-    background-color: #d3d3d3;
-    margin: 0;
-    padding: 0;
-  }
   .wrapper{
     width:100%;
   }
@@ -20,7 +15,8 @@ html, body{
   }
   .slick-slide img{
     width:100%;
-    border: 2px solid #d3d3d3;
+    position: relative;
+    left: 35px;
   }
   .wrapper .slick-dots li button:before {
     font-size:20px;
@@ -28,11 +24,11 @@ html, body{
   }
 
   .slick-prev::before {
-    content: url('./arrow-l.svg')
+    content: url('../arrow-l.svg')
   }
 
   .slick-next::before {
-    content: url('./arrow-r.svg')
+    content: url('../arrow-r.svg')
   }
 
   .product {
@@ -139,6 +135,20 @@ html, body{
   display: flex;
 }
 
+.price-container-1 p:nth-child(1) {
+  position: relative;
+  top: 15px;
+  right: 10px;
+  font-size: 5vw;
+}
+
+.price-container-1 p:nth-child(3) {
+  position: relative;
+  bottom: 30px;
+  left: 50px;
+  font-size: 4vw;
+}
+
 .price-container-1 p:nth-child(2) {
   font-size: 20px;
 }
@@ -162,10 +172,15 @@ html, body{
 }
 
 .price-int {
-  font-size: 80px !important;
+  font-size: 20vw !important;
 }
 
 .cent {
   vertical-align: super;
-  font-size: 30px !important;
+  font-size: 5vw !important;
+}
+
+@media only screen and (min-width: 600px) {
+
+
 }
