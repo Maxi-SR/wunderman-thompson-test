@@ -13,7 +13,7 @@
   .slick-slide img{
     width:100%;
     position: relative;
-    left: 30px;
+    left: 15%;
   }
   .wrapper .slick-dots li button:before {
     font-size:20px;
@@ -42,13 +42,7 @@
   .product {
     width: 50%;
   }
-
-  .articles-container {
-    height: 300px;
-    margin-top: 50px;
-    background-color: #ffffff;
-  }
-
+  
   .form-container {
     height: 300px;
     background-color: aquamarine;
@@ -70,7 +64,6 @@
     position: absolute;
     color: #a1a2a1;
     z-index: 1;
-    font-size: 10vw !important;
 }
 
 .item-text p:nth-child(1) {
@@ -95,18 +88,21 @@
     font-family: sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 18vw;
+    font-size: 17vw;
 }
 
 .item-text button {
-    width: 170px;
-    height: 45px;
+    padding: 1em 2em;
+    border: 0.1em solid #FFFFFF;
+    margin: 0 3em 3em 0;
     background-color: #00a8e8;
     border-radius: 5px;
     border-style: none;
     text-transform: uppercase;
     font-weight: 900;
     color: #fff;
+    text-align: center;
+    font-size: 3vw;
 }
 .item-container {
   position: relative;
@@ -181,12 +177,6 @@
   width: 2000px;
 }
 
-/* .slick-initialized .slick-slide {
-  display: block;
-  margin: 0;
-  padding: 0;
-} */
-
 .slick-prev {
   left: -35px !important;
   z-index: 1;
@@ -203,7 +193,10 @@
   font-size: 5vw !important;
 }
 
-@media only screen and (min-width: 600px) {
+/* @media only screen and (min-width: 900px) {
 
+    .slick-slide img {
+        left:170px !important;
+    }
 
-}
+} */
