@@ -91,8 +91,11 @@
     font-size: 17vw;
 }
 
-.item-text button {
-    padding: 1em 2em;
+.item-text a {
+    position: relative;
+    left: 10%;
+    bottom: 10%;
+    padding: 0.5em 2em;
     border: 0.1em solid #FFFFFF;
     margin: 0 3em 3em 0;
     background-color: #00a8e8;
