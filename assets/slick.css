@@ -193,10 +193,17 @@
   font-size: 5vw !important;
 }
 
-/* @media only screen and (min-width: 900px) {
+@media only screen and (min-width: 900px) {
 
     .slick-slide img {
-        left:170px !important;
+        height: 1000px;
     }
 
-} */
+    .wrapper {
+      height: 800px;
+    }
+
+    .slick-slider {
+      height: 800px !important;
+    }
+}
