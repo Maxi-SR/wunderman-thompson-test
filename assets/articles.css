@@ -6,7 +6,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content:center;
-  width: 90%;
+  width: 100%;
   margin: auto;
 }
 
@@ -20,20 +20,20 @@
   background-color: #ffffff;
   color: black;
   width: 300px;
-  margin: 30px;
   height: 400px;
+  margin: 10px;
   border: 1px solid #a1a2a1;
   border-radius: 10px;
   box-shadow: 1px 1px 8px #a1a2a1;
 }
 
-.lorem-text {
-    word-wrap: break-word;
+.text-container {
+    text-align: start;
+    padding: 10px 40px;
 }
 
 .articles-container h2 {
     text-align: center;
-    padding-top: 20px;
 }
 
 .text-container > h3 {
