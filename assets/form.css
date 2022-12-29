@@ -1,0 +1,87 @@
+.form-section {
+    background-color: #ffffff;
+    width: 100%;
+}
+
+.form-section h2 {
+    padding-top: 20px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    text-align: center;
+    border-bottom: 1px solid black;
+}
+
+.col-50 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.col-50 input[type="text"] {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.col-50 select {
+    width: 48%;
+    margin-bottom: 20px;
+}
+
+.row-100 input {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 80%;
+}
+
+button {
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 0.5em 2em;
+    border: 0.1em solid #FFFFFF;
+    background-color: #00a8e8;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: #fff;
+    text-align: center;
+    font-size: 1em;
+}
+
+input, select {
+    box-sizing: border-box;
+    height: 40px;
+}
+
+.terms-container {
+    display: flex;
+    justify-content: space-around;
+    width: 48%;
+}
+
+.terms-container label, input[type="checkbox"] {
+    margin: auto;
+}
+
+@media screen and (max-width: 600px) {
+
+    .col-50 input[type="text"] {
+        width: 100%;
+    }
+
+    .col-50 select {
+        width: 100%;
+    }
+
+    .terms-container {
+        width: 100%;
+    }
+
+}
