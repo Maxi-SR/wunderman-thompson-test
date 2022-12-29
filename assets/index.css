@@ -7,3 +7,48 @@ html, body{
     height: 100%;
     font-family: 'Open Sans', sans-serif;
   }
+
+.fb-container {
+  display: flex;
+  width: 200px;
+  justify-content: space-between;
+  vertical-align: baseline;
+}
+
+.fb-container p{
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.fb-container img{
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.header-container {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  background-color: black;
+  width: 100%;
+  height: 30px;
+}
+
+.header-container p {
+  margin: 5px;
+  padding: 0;
+}
+
+@media screen and (max-width: 600px) {
+
+  .fb-container p{
+    display: none;
+  }
+
+  .fb-container {
+    justify-content: flex-end;
+}
+
+}

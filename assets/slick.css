@@ -124,22 +124,6 @@
   margin: 0;
 }
 
-.header-container {
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  color: #fff;
-  background-color: black;
-  width: 100%;
-  height: 20px;
-}
-
-.header-container p {
-  margin: 0;
-  padding: 0;
-}
-
 .price-container-1 {
   width: 80px;
   height: 50px;

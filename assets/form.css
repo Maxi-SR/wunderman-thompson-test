@@ -62,12 +62,13 @@ input, select {
 
 .terms-container {
     display: flex;
-    justify-content: space-around;
     width: 48%;
 }
 
 .terms-container label, input[type="checkbox"] {
     margin: auto;
+    margin-right: 10px;
+    margin-left: 0;
 }
 
 @media screen and (max-width: 600px) {
@@ -81,7 +82,7 @@ input, select {
     }
 
     .terms-container {
-        width: 100%;
+        width: 80%;
     }
 
 }
