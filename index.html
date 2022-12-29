@@ -138,7 +138,7 @@
                     <span>Email</span>
                 </label>
             </div>
-            <div class="col-50">
+            <div class="col-50 two-select">
                 <select name="name1" id="depto" onchange="getSelectedOption(this)">
                     <option>Departamento</option>
                 </select>
@@ -152,8 +152,8 @@
                     <span>C.I</span>
                 </label>
                 <div class="terms-container">
-                    <input type="checkbox" name="id2">
-                    <label for="id2">Acepta las bases y condiciones</label>
+                    <input type="checkbox" name="id2" id="input-checkbox">
+                    <label for="id2" id="label-checkbox">Acepta las bases y condiciones</label>
                 </div>
             </div>
             <button type="submit">Enviar</button>
@@ -164,6 +164,10 @@
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/select.js"></script>
     <script type="text/javascript" src="./js/validations/name-Lname.js"></script>
+    <script type="text/javascript" src="./js/validations/email.js"></script>
+    <script type="text/javascript" src="./js/validations/ci.js"></script>
+    <script type="text/javascript" src="./js/validations/select.js"></script>
+    <script type="text/javascript" src="./js/validations/index.js"></script>
 </body>
 
 </html>

@@ -102,6 +102,10 @@ input:not(:placeholder-shown)+span {
     width: 48%;
 }
 
+.two-select {
+    margin-top: 10px;
+}
+
 .col-50 label input {
     width: 100%;
 }
