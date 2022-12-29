@@ -17,17 +17,18 @@
     justify-content: space-between;
 }
 
-.col-50 input[type="text"] {
-    width: 48%;
-    margin-bottom: 20px;
-}
-
 .col-50 select {
     width: 48%;
     margin-bottom: 20px;
 }
 
-.row-100 input {
+.row-100 label {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 40px;
+}
+
+.row-100 label input {
     width: 100%;
     margin-bottom: 20px;
     height: 40px;
@@ -55,9 +56,10 @@ button {
     font-size: 1em;
 }
 
-input, select {
+input,
+select {
     box-sizing: border-box;
-    height: 40px;
+    height: 50px;
 }
 
 .terms-container {
@@ -65,16 +67,50 @@ input, select {
     width: 48%;
 }
 
-.terms-container label, input[type="checkbox"] {
+.terms-container label,
+input[type="checkbox"] {
     margin: auto;
     margin-right: 10px;
     margin-left: 0;
 }
 
+
+label {
+    margin: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+
+span {
+    padding: 10px;
+    pointer-events: none;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transition: 0.2s;
+    transition-timing-function: ease;
+    transition-timing-function: cubic-bezier(0.25, 0.1, 0.25, 1);
+    opacity: 0.5;
+}
+
+input:focus+span,
+input:not(:placeholder-shown)+span {
+    opacity: 1;
+    transform: scale(0.75) translateY(-45%) translateX(-15px);
+}
+
+.col-50 label {
+    width: 48%;
+}
+
+.col-50 label input {
+    width: 100%;
+}
+
 @media screen and (max-width: 600px) {
 
-    .col-50 input[type="text"] {
-        width: 100%;
+    .col-50 label {
+        width: 100% !important;
     }
 
     .col-50 select {
