@@ -138,13 +138,11 @@
                 </label>
             </div>
             <div class="col-50">
-                <select name="name1">
+                <select name="name1" id="depto" onchange="getSelectedOption(this)">
                     <option>Departamento</option>
-                    <option>value2</option>
                 </select>
-                <select name="name2">
+                <select name="name2" id="loc">
                     <option>Localidad</option>
-                    <option>value2</option>
                 </select>              
             </div>
             <div class="col-50">
@@ -161,9 +159,9 @@
         </form>
     </section>
     <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-    <script type="text/javascript"
-        src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
+    <script type="text/javascript" src="./js/select.js"></script>
 </body>
 
 </html>
