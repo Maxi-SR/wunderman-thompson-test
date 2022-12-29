@@ -12,6 +12,7 @@ window.onload = () => {
         if (inputSelected.value.length <= 2) {
             return false;
         }
+        return true;
     }
     
     const validate = (e) => {
