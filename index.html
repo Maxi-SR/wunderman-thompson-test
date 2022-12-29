@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/articles.css">
     <link rel="stylesheet" href="./assets/slick.css">
     <link rel="stylesheet" href="./assets/form.css">
+    <link rel="stylesheet" href="./assets/input.css">
     <title>Document</title>
 </head>
 
@@ -120,20 +121,20 @@
     </section>
     <section class="form-section">
         <h2>Formulario</h2>
-        <form>
+        <form id="send-form">
             <div class="col-50">
                 <label>
-                    <input placeholder=" ">
+                    <input placeholder=" " id="name">
                     <span>Nombre</span>
                 </label>
                 <label>
-                    <input placeholder=" ">
+                    <input placeholder=" " id="lastName">
                     <span>Apellido</span>
                 </label>
             </div>
             <div class="row-100">
                 <label>
-                    <input placeholder=" ">
+                    <input placeholder=" " id="email">
                     <span>Email</span>
                 </label>
             </div>
@@ -147,7 +148,7 @@
             </div>
             <div class="col-50">
                 <label>
-                    <input placeholder=" ">
+                    <input placeholder=" " id="ci">
                     <span>C.I</span>
                 </label>
                 <div class="terms-container">
@@ -162,6 +163,7 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.8/slick.min.js"></script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script type="text/javascript" src="./js/select.js"></script>
+    <script type="text/javascript" src="./js/validations/name-Lname.js"></script>
 </body>
 
 </html>
