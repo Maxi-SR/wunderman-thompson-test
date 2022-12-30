@@ -18,6 +18,15 @@ window.onload = () => {
         labelCheckbox.classList.remove("label-error");
     }
 
+    const nameError = () => {
+        nameInput.classList.add("error");
+        document.getElementById("name-error-message").innerHTML = 'El nombre debe tener al menos dos caractéres';
+    }
+
+    const lastNameError = () => {
+        lnameInput.classList.add("error");
+        document.getElementById("lastName-error-message").innerHTML = 'El apellido debe tener al menos dos caractéres';
+    }
 
     const validate = (e) => {
 
@@ -26,12 +35,13 @@ window.onload = () => {
             let validLName = nameLnValidation(lnameInput);
             let validEmail = validateEmail(inputEmail);
             let validCI = validarCedula(inputCI.value) && inputCI.value.length !== 0 ;
+
             validateSelect(inputSelectDep, inputSelectLoc);
             !inputCheckbox.checked ? labelCheckbox.classList.add("label-error") : '';
             !validCI ? (inputCI.classList.add("error")) : '';
             !validEmail ? (inputEmail.classList.add("error")) : '';
-            !validName ? (nameInput.classList.add("error")) : '';
-            !validLName ? (lnameInput.classList.add("error")) : '';
+            !validName ? (nameError()) : '';
+            !validLName ? (lastNameError()) : '';
         }
 
     form.addEventListener("submit", validate);
