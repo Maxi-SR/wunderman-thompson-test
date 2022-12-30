@@ -17,9 +17,25 @@
     justify-content: space-between;
 }
 
-.col-50 select {
+.col-50 div {
     width: 48%;
     margin-bottom: 20px;
+}
+
+.col-50 div select{
+    width: 100%;
+}
+
+.ci-container {
+    width: 100%;
+}
+
+#ci-label {
+    width: 100%;
+}
+
+#id {
+    width: 100%;
 }
 
 .row-100 label {
@@ -30,7 +46,7 @@
 
 .row-100 label input {
     width: 100%;
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 form {
@@ -117,6 +133,10 @@ input:not(:placeholder-shown)+span {
     }
 
     .col-50 select {
+        width: 100%;
+    }
+
+    .col-50 div {
         width: 100%;
     }
 

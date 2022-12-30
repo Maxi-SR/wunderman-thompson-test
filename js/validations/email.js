@@ -5,6 +5,7 @@ const validateEmail = (email) => {
 
     email.onfocus = () => {
         email.classList.remove("error");
+        document.getElementById("email-error-message").innerHTML = '';
     }
 
     return String(email.value)

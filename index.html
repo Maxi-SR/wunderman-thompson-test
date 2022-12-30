@@ -138,25 +138,32 @@
                 <label>
                     <input placeholder=" " id="email">
                     <span>Email</span>
+                    <p id="email-error-message" class="error-message"></p>
                 </label>
                 <span id="email-error-message"></span>
             </div>
             <div class="col-50 two-select">
-                <select name="name1" id="depto" onchange="getSelectedOption(this)">
-                    <option>Departamento</option>
-                </select>
-                <span class="select-error-message"></span>
-                <select name="name2" id="loc">
-                    <option>Localidad</option>
-                </select>              
-                <span class="select-error-message"></span>
+                <div>
+                    <select name="name1" id="depto" onchange="getSelectedOption(this)">
+                        <option>Departamento</option>
+                    </select>
+                    <p id="dep-error-message" class="error-message"></p>
+                </div>
+                <div>
+                    <select name="name2" id="loc">
+                        <option>Localidad</option>
+                    </select>              
+                    <p id="loc-error-message" class="error-message"></p>
+                </div>
             </div>
-            <div class="col-50">
-                <label>
-                    <input placeholder=" " id="ci">
-                    <span>C.I</span>
-                </label>
-                <span id="ci-error-message"></span>
+            <div class="col-50 ci-container">
+                <div>
+                    <label id="ci-label">
+                        <input placeholder=" " id="ci">
+                        <span>C.I</span>
+                    </label>
+                    <p id="ci-error-message" class="error-message"></p>
+                </div>
                 <div class="terms-container">
                     <input type="checkbox" name="id2" id="input-checkbox">
                     <label for="id2" id="label-checkbox">Acepta las bases y condiciones</label>

@@ -9,9 +9,12 @@ window.onload = () => {
     const labelCheckbox = document.getElementById("label-checkbox");
     const inputSelectDep = document.getElementById("depto");
     const inputSelectLoc = document.getElementById("loc");
+    const id1Select = document.getElementById("dep-error-message");
+    const id2Select = document.getElementById("loc-error-message");
 
     inputCI.onfocus = () => {
-            inputCI.classList.remove("error")
+            inputCI.classList.remove("error");
+            document.getElementById("ci-error-message").innerHTML = '';
     }
 
     inputCheckbox.onfocus = () => {
@@ -28,6 +31,16 @@ window.onload = () => {
         document.getElementById("lastName-error-message").innerHTML = 'El apellido debe tener al menos dos caractéres';
     }
 
+    const emailError = () => {
+        inputEmail.classList.add("error");
+        document.getElementById("email-error-message").innerHTML = 'El email debe tener un formato válido';
+    }
+
+    const ciError = () => {
+        inputCI.classList.add("error");
+        document.getElementById("ci-error-message").innerHTML = 'Complete CI sin puntos ni guiones';
+    }
+ 
     const validate = (e) => {
 
             e.preventDefault();
@@ -36,10 +49,10 @@ window.onload = () => {
             let validEmail = validateEmail(inputEmail);
             let validCI = validarCedula(inputCI.value) && inputCI.value.length !== 0 ;
 
-            validateSelect(inputSelectDep, inputSelectLoc);
+            validateSelect(inputSelectDep, inputSelectLoc, id1Select, id2Select);
             !inputCheckbox.checked ? labelCheckbox.classList.add("label-error") : '';
-            !validCI ? (inputCI.classList.add("error")) : '';
-            !validEmail ? (inputEmail.classList.add("error")) : '';
+            !validCI ? (ciError()) : '';
+            !validEmail ? (emailError()) : '';
             !validName ? (nameError()) : '';
             !validLName ? (lastNameError()) : '';
         }
