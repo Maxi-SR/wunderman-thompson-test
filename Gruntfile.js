@@ -1,3 +1,5 @@
+const sass = require('node-sass'); 
+
 module.exports = function (grunt) {
   grunt.initConfig({
     pkg: grunt.file.readJSON('package.json'),
@@ -9,14 +11,36 @@ module.exports = function (grunt) {
       }
     },
 
-    cssmin: {
+    concat: {
+      dist: {
+        src: [
+          'assets/*.scss',
+        ],
+        dest: 'assets/build.scss',
+      }
+    },
+
+    sass: {
+
+      options: {
+        outputStyle: 'compressed',
+        implementation: sass 
+      },
+
       build: {
-        src: ['assets/*.css'],
-        dest: 'dist/app.min.css'
+        files: [{
+          src: ['assets/build.scss'],
+          dest: 'dist/styles.css'
+        }]
       }
     }
+
   });
 
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-cssmin')
+  grunt.loadNpmTasks('grunt-sass');
+  grunt.loadNpmTasks('grunt-contrib-concat');
+
+  grunt.registerTask('default', ['uglify', 'concat', 'sass']);
+
 };
